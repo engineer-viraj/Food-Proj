@@ -1,4 +1,3 @@
-
 /* Responsive */
 
 /* For tablets and smaller desktops */
@@ -58,7 +57,7 @@
   }
 }
 
-/* For smaller tablets */
+/* For smaller tablets and mobile */
 @media only screen and (max-width: 767px) {
   body {
     font-size: 16px;
@@ -74,8 +73,47 @@
     margin: 0 0 4% 0;
   }
 
+  /* Mobile navigation */
   .main-nav {
     display: none;
+    float: left;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .main-nav li {
+    display: block;
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+
+  .sticky .main-nav {
+    margin-top: 10px;
+  }
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 10px 0;
+  }
+
+  .sticky .mobile-nav-icon {
+    margin-top: 10px;
+  }
+
+  .sticky .mobile-nav-icon ion-icon {
+    color: #555;
   }
 
   h1 {
